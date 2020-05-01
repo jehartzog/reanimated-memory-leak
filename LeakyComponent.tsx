@@ -74,7 +74,7 @@ class FancyAnimation extends React.Component {
             <PanGestureHandler onGestureEvent={this.handlePan} onHandlerStateChange={this.handlePan}>
               <Animated.View style={buttonViewStyle}>
                 <Text>I Move</Text>
-                <Image source={require('./smile.jpg')}/>
+                <Image style={{width: 300, height: 300}} source={require('./bigimage.png')}/>
               </Animated.View>
             </PanGestureHandler>
           </Animated.View>

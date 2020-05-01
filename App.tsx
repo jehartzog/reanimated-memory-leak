@@ -11,7 +11,7 @@ export default function App() {
     <View style={{ flex: 1}}>
       <View style={styles.container}>
         <Text>Open up App.tsx to start working on your app!</Text>
-        <TouchableOpacity onPress={() => setIsVisible(!isVisible)}>
+        <TouchableOpacity style={{ height: 150, paddingTop: 70 }} onPress={() => setIsVisible(!isVisible)}>
           <Text>Press me to toggle visible component, and leak</Text>
         </TouchableOpacity>
       </View>
