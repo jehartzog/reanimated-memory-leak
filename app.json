@@ -1,0 +1,17 @@
+{
+  "name": "memory-leak-repo",
+  "displayName": "memory-leak-repo",
+  "expo": {
+    "name": "memory-leak-repo",
+    "slug": "memory-leak-repo",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
