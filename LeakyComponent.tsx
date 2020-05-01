@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {View, Image, Text} from 'react-native';
 import Animated, {Easing} from 'react-native-reanimated';
 import {PanGestureHandler, TapGestureHandler, State} from 'react-native-gesture-handler';
 
@@ -56,7 +56,7 @@ class FancyAnimation extends React.Component {
         block([
           cond(
             eq(state, State.BEGAN),
-            call([], () => console.log('drag started, memory leaked'))
+            call([], () => console.log('drag started'))
           ),
           set(this.buttonX, translationX),
         ]),
@@ -74,6 +74,7 @@ class FancyAnimation extends React.Component {
             <PanGestureHandler onGestureEvent={this.handlePan} onHandlerStateChange={this.handlePan}>
               <Animated.View style={buttonViewStyle}>
                 <Text>I Move</Text>
+                <Image source={require('./smile.jpg')}/>
               </Animated.View>
             </PanGestureHandler>
           </Animated.View>
